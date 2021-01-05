@@ -1,0 +1,92 @@
+// const { createProxyMiddleware } = require('http-proxy-middleware');
+//   app.use(proxy({
+//     "/api": {
+//       target: "http://zhiku.wuxikx.org.cn/",
+//       changeOrigin: true, // 是否改变域名
+//       ws: true,
+//       pathRewrite: {
+//         "^/api": ""
+//       }
+//     },
+//     "/data": {
+//       target: "http://zhiku.wuxikx.org.cn/",
+//       // target: "http://szst.suzhou.gov.cn/",
+//       changeOrigin: true, // 是否改变域名
+//       ws: true
+
+//     },
+//     "/attachment": {
+//       target: "http://zhiku.wuxikx.org.cn/",
+//       // target: "http://szst.suzhou.gov.cn/",
+//       changeOrigin: true, // 是否改变域名
+//       ws: true
+
+//     }
+//   }));
+// };
+const { createProxyMiddleware } = require('http-proxy-middleware');
+
+// const apiProxy = createProxyMiddleware({
+//   "/api": {
+//     target: "http://zhiku.wuxikx.org.cn/",
+//     changeOrigin: true, // 是否改变域名
+//     ws: true,
+//     pathRewrite: {
+//       "^/api": ""
+//     }
+//   },
+//   "/data": {
+//     target: "http://zhiku.wuxikx.org.cn/",
+//     // target: "http://szst.suzhou.gov.cn/",
+//     changeOrigin: true, // 是否改变域名
+//     ws: true
+
+//   },
+//   "/attachment": {
+//     target: "http://zhiku.wuxikx.org.cn/",
+//     // target: "http://szst.suzhou.gov.cn/",
+//     changeOrigin: true, // 是否改变域名
+//     ws: true
+
+//   }
+// });
+// module.exports = function () {
+//   createProxyMiddleware({
+//     "/api": {
+//       target: "http://zhiku.wuxikx.org.cn/",
+//       changeOrigin: true, // 是否改变域名
+//       ws: true,
+//       pathRewrite: {
+//         "^/api": ""
+//       }
+//     },
+//     "/data": {
+//       target: "http://zhiku.wuxikx.org.cn/",
+//       // target: "http://szst.suzhou.gov.cn/",
+//       changeOrigin: true, // 是否改变域名
+//       ws: true
+
+//     },
+//     "/attachment": {
+//       target: "http://zhiku.wuxikx.org.cn/",
+//       // target: "http://szst.suzhou.gov.cn/",
+//       changeOrigin: true, // 是否改变域名
+//       ws: true
+
+//     }
+//   });
+// }
+// const {
+//   createProxyMiddleware
+// } = require('http-proxy-middleware');
+// module.exports = function (app) {
+//   app.use(
+//     createProxyMiddleware("/api", {
+//       target: "http://ip:port/", // 后端的接口
+//       changeOrigin: true,
+//       // pathRewrite: {
+//       //   "^/api": ""
+//       // }
+//     })
+//   )
+// }
