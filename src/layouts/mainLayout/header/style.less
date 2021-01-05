@@ -1,0 +1,61 @@
+.w1200 {
+    width : 1200px;
+    margin: auto;
+}
+
+.header {
+    
+    .top {
+        height: 92px;
+        overflow: auto;
+        .headerRight {
+            margin-top: 30px;
+            float     : right;
+
+            .search {
+                // display: inline-block;
+                // width  : 240px;
+            }
+
+            .loginBtn {
+                margin-left   : 20px;
+                // vertical-align: top;
+                // display       : inline-block;
+                // width         : 128px;
+            }
+
+
+        }
+    }
+
+
+    .nav {
+        height     : 78px;
+        left       : 0;
+        right      : 0;
+        line-height: 78px;
+        background : linear-gradient(180deg, #00c0fa 0, #015eea);
+        .navItem{
+           color: #fff;
+            cursor: pointer;
+            margin: 0 38px;
+            line-height: 68px;
+            display: inline-block;
+            font-size: 20px;
+            position: relative;
+            white-space: nowrap;
+            &.on:after,
+            &:hover:after{
+                content: '';
+                display: block;
+                width: 100%;
+                height: 4px;
+                background: #fff;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                // transform: translateX(-50%);
+            }
+        }
+    }
+}

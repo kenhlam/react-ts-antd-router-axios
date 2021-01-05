@@ -1,15 +1,16 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import { Carousel, Row, Col, Tabs } from 'antd';
-import banner1 from "@/imgs/lunbo1.png"
-import banner2 from "@/imgs/lunbo2.png"
-import test from "@/imgs/test.jpg"
-import xqdtImg from "@/imgs/xqdt.png"
+import banner1 from "@imgs/lunbo1.png"
+import banner2 from "@imgs/lunbo2.png"
+import test from "@imgs/test.jpg"
+import xqdtImg from "@imgs/xqdt.png"
 // import $ from 'jquery';
 // import "@/lib/slider/jquery.bxslider"
 import { _newsList, _getVideoList, _rwList } from "@service"
 
 import "./style.less"
+import style from "./style.module.less"
 // import { set } from 'mobx';
 
 interface listParam {
@@ -142,7 +143,7 @@ const Home: React.FC = () => {
                     {
                         newsList.tzgg && newsList.tzgg.map((v: any) => {
                             return (
-                                <Col span={12} key={v.id}>
+                                <Col span={12} key={v.id} className={`${style.red} f12`}>
                                     {v.title}
                                 </Col>
                             )

@@ -67,6 +67,7 @@ module.exports = {
     // addLessModule(),
     addWebpackAlias({
       ["@"]: path.resolve(__dirname, "src"),
+      ["@pages"]: path.resolve(__dirname, "src/pages"),
       ["@components"]: path.resolve(__dirname, "src/components"),
       ["@imgs"]: path.resolve(__dirname, "src/imgs"),
       ["@assets"]: path.resolve(__dirname, "src/assets"),
